@@ -19,6 +19,12 @@ export const RepoContainer = styled.div`
     gap: 0.75rem;
     background-color: #2D3239;
     border-radius: 8px;
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .empty{

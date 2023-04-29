@@ -38,8 +38,17 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0 36px;
+    padding: 0 2.25rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 0 4rem 0;
+
+    .back-btn{
+      padding: 0 1rem;
+    }
+  }
+
 `
 export const UserInfo = styled.div`
   width: 100%;

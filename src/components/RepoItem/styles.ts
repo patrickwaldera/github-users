@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const RepoItemContainer = styled.a`
+  max-width: 100%;
+  width: 100%;
   text-decoration: none;
   background-color: #ffffff;
   color: #000000;
@@ -12,8 +14,10 @@ export const RepoItemContainer = styled.a`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  overflow-x: hidden;
 
   .repo-title{
+    max-width: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,11 +27,13 @@ export const RepoItemContainer = styled.a`
   }
 
   .repo-text{
+    max-width: 100%;
     min-height: 110px;
     max-height: 110px;
     overflow: auto;
 
     p{
+      max-width: 100%;
       font-size: 0.875rem;
       line-height: 120%;
       text-align: justify;
@@ -35,6 +41,7 @@ export const RepoItemContainer = styled.a`
   }
 
   .repo-footer{
+    max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,6 +49,7 @@ export const RepoItemContainer = styled.a`
   }
 
   .language{
+    max-width: 100%;
     display: flex;
     align-items: center;
     gap: 0.625rem;
@@ -54,6 +62,7 @@ export const RepoItemContainer = styled.a`
   }
 
   .stars {
+    max-width: 100%;
     display: flex;
     align-items: center;
     gap: 0.625rem;

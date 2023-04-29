@@ -1,6 +1,7 @@
 import { RepoItemContainer } from "./styles"
 import { BookMarkedIcon, Star } from 'lucide-react'
 import { IRepoItem } from "./types"
+import languageColors from "../../utils/languageColors"
 
 const RepoItem = ({name, html_url, description, language, stargazers_count }: IRepoItem) => {
   return (
@@ -14,7 +15,7 @@ const RepoItem = ({name, html_url, description, language, stargazers_count }: IR
       </div>
       <div className="repo-footer">
         <div className="language">
-          <div></div>
+          <div style={{backgroundColor: languageColors[language]}}></div>
           <span>{language}</span>
         </div>
         <div className="stars">
