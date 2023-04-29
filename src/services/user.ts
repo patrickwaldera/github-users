@@ -11,7 +11,7 @@ const getRepos = async (username: string) => {
   return response.data
 }
 
-export default { 
+export default {
   get,
-  getRepos
+  getRepos,
 }

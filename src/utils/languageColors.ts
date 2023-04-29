@@ -1,5 +1,5 @@
 interface LanguageColors {
-  [key: string]: string;
+  [key: string]: string
 }
 
 const languageColors: LanguageColors = {
@@ -133,7 +133,7 @@ const languageColors: LanguageColors = {
   TeX: '#3D6117',
   Nemerle: '#3d3c6e',
   KRL: '#28431f',
-  'Ren\'Py': '#ff7f7f',
+  "Ren'Py": '#ff7f7f',
   'Unified Parallel C': '#4e3617',
   Golo: '#88562A',
   Fancy: '#7b9db4',
@@ -201,6 +201,6 @@ const languageColors: LanguageColors = {
   'AGS Script': '#B9D9FF',
   Dogescript: '#cca760',
   nesC: '#94B0C7',
-};
+}
 
-export default languageColors;
+export default languageColors

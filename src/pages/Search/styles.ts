@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SearchContainer = styled.div`
   margin: 0 auto;
@@ -14,17 +14,16 @@ export const SearchContainer = styled.div`
   gap: 48px;
 
   logo-img {
-    img{
+    img {
       max-width: 90%;
       height: auto;
     }
   }
 
-  .form-wrapper{
+  .form-wrapper {
     min-width: 100%;
     max-width: 100%;
   }
-
 
   form {
     margin: 0 auto;
@@ -36,18 +35,26 @@ export const SearchContainer = styled.div`
     width: 400px;
     gap: 24px;
 
-    .loader{
-      color: #39D353;
+    .loader {
+      color: #39d353;
       animation: spin 2s linear infinite;
-      
+
       @-webkit-keyframes spin {
-        0% { -webkit-transform: rotate(0deg); }
-        100% { -webkit-transform: rotate(360deg); }
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
       }
 
       @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
       }
     }
   }

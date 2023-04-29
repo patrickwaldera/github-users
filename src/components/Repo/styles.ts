@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const RepoContainer = styled.div`
   width: 100%;
@@ -7,17 +7,17 @@ export const RepoContainer = styled.div`
   margin: 5.25rem 0;
   gap: 1rem;
 
-  .title{
+  .title {
     font-weight: 500;
     font-size: 16px;
   }
 
-  .repo-list{
+  .repo-list {
     padding: 1.5rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.75rem;
-    background-color: #2D3239;
+    background-color: #2d3239;
     border-radius: 8px;
     @media (max-width: 992px) {
       grid-template-columns: 1fr 1fr;
@@ -27,13 +27,13 @@ export const RepoContainer = styled.div`
     }
   }
 
-  .empty{
+  .empty {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    img{
+    img {
       max-height: 150px;
     }
   }
@@ -45,5 +45,4 @@ export const RepoContainer = styled.div`
   @media (max-width: 254px) {
     margin-top: 15rem;
   }
-
 `

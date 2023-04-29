@@ -1,3 +1,3 @@
-export interface IButton extends React.ComponentPropsWithoutRef<"button"> {
+export interface IButton extends React.ComponentPropsWithoutRef<'button'> {
   text: string
 }

@@ -1,26 +1,25 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProfileContainer = styled.div`
   margin: 0 auto;
   width: 1024px;
   max-width: 90%;
-  
-  footer{
+
+  footer {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 1.5rem;
   }
 
-  .footer-img{
+  .footer-img {
     max-width: 70px;
   }
-
 `
 
 export const Header = styled.header`
   position: relative;
-  background-color: #0E4429;
+  background-color: #0e4429;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +30,7 @@ export const Header = styled.header`
   gap: 1rem;
   border-radius: 0px 0px 25px 25px;
 
-  .back-btn{
+  .back-btn {
     cursor: pointer;
     text-decoration: none;
     width: 100%;
@@ -44,11 +43,10 @@ export const Header = styled.header`
   @media (max-width: 768px) {
     padding: 1.5rem 0 4rem 0;
 
-    .back-btn{
+    .back-btn {
       padding: 0 1rem;
     }
   }
-
 `
 export const UserInfo = styled.div`
   width: 100%;
@@ -58,7 +56,7 @@ export const UserInfo = styled.div`
   justify-content: center;
   gap: 1.5rem;
 
-  .info{
+  .info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -67,20 +65,20 @@ export const UserInfo = styled.div`
     text-align: center;
     gap: 0.75rem;
 
-    h2{
+    h2 {
       font-weight: 700;
       font-size: 1.75rem;
     }
 
-    .username-link{
+    .username-link {
       cursor: pointer;
       text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
-      color: #499F68;
+      color: #499f68;
     }
 
-    p{
+    p {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -88,9 +86,7 @@ export const UserInfo = styled.div`
       font-weight: 500;
       font-size: 0.75rem;
     }
-
   }
-
 `
 
 export const ProfileImgContainer = styled.div`
@@ -100,10 +96,10 @@ export const ProfileImgContainer = styled.div`
   width: 156px;
   height: 156px;
   border-radius: 100%;
-  outline: 3px solid #FFFFFF;
+  outline: 3px solid #ffffff;
   margin: 0.5rem 0;
 
-  .profile-img{
+  .profile-img {
     margin: auto;
     overflow: hidden;
     width: 148px;
@@ -129,27 +125,26 @@ export const Stats = styled.div`
   max-width: 90%;
 
   @media (max-width: 411px) {
-    bottom: -8rem;   
+    bottom: -8rem;
   }
 
   @media (max-width: 254px) {
     bottom: -13.5rem;
   }
-
 `
 
 export const StatsItem = styled.div`
-  background-color: #161B22;
+  background-color: #161b22;
   border-radius: 12px;
   padding: 0.875rem;
   text-align: center;
-  p{
+  p {
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 4px;
   }
 
-  span{
+  span {
     font-weight: 500;
     font-size: 0.875rem;
   }
@@ -157,5 +152,4 @@ export const StatsItem = styled.div`
   @media (max-width: 411px) {
     flex: 1;
   }
-
 `

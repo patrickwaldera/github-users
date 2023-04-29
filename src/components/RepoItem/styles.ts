@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const RepoItemContainer = styled.a`
   max-width: 100%;
@@ -16,7 +16,7 @@ export const RepoItemContainer = styled.a`
   gap: 1.5rem;
   overflow-x: hidden;
 
-  .repo-title{
+  .repo-title {
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -26,13 +26,13 @@ export const RepoItemContainer = styled.a`
     font-weight: 700;
   }
 
-  .repo-text{
+  .repo-text {
     max-width: 100%;
     min-height: 110px;
     max-height: 110px;
     overflow: auto;
 
-    p{
+    p {
       max-width: 100%;
       font-size: 0.875rem;
       line-height: 120%;
@@ -40,7 +40,7 @@ export const RepoItemContainer = styled.a`
     }
   }
 
-  .repo-footer{
+  .repo-footer {
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -48,12 +48,12 @@ export const RepoItemContainer = styled.a`
     align-items: center;
   }
 
-  .language{
+  .language {
     max-width: 100%;
     display: flex;
     align-items: center;
     gap: 0.625rem;
-    div{
+    div {
       width: 1rem;
       height: 1rem;
       border-radius: 100%;
@@ -67,5 +67,4 @@ export const RepoItemContainer = styled.a`
     align-items: center;
     gap: 0.625rem;
   }
-
 `

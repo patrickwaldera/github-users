@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { Profile } from "./components/Profile"
-import { Search } from "./components/Search"
-import { Container } from "./styles"
-import { User } from "./types/User"
+import { useState } from 'react'
+import { Profile } from './pages/Profile'
+import { Search } from './pages/Search'
+import { Container } from './styles'
+import { User } from './types/User'
 
 function App() {
   const [user, setUser] = useState<User | null>(null)
