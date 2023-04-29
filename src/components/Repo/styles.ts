@@ -21,6 +21,17 @@ export const RepoContainer = styled.div`
     border-radius: 8px;
   }
 
+  .empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    img{
+      max-height: 150px;
+    }
+  }
+
   @media (max-width: 411px) {
     margin-top: 9.5rem;
   }

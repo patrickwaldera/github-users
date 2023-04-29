@@ -35,5 +35,20 @@ export const SearchContainer = styled.div`
     max-width: 90%;
     width: 400px;
     gap: 24px;
+
+    .loader{
+      color: #39D353;
+      animation: spin 2s linear infinite;
+      
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    }
   }
 `

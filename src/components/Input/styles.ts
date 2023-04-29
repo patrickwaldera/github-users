@@ -46,4 +46,9 @@ export const InputWrapper = styled.div`
       }
     }
   }
+
+  .error{
+    font-size: 0.75rem;
+    color: #FF4040;
+  }
 `
