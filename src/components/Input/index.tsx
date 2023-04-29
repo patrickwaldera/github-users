@@ -10,7 +10,7 @@ const Input = ({label, id, placeholder, ...inputProps}: IInput) => {
       </label>
       <div className="input-container">
         <User size={24} />
-        <input id={id} placeholder={placeholder} {...inputProps} />
+        <input id={id} placeholder={placeholder} required {...inputProps} />
       </div>
     </InputWrapper>
   )

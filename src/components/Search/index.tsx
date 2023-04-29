@@ -3,13 +3,28 @@ import logo from '../../assets/Logo.svg'
 import { Button } from "../Button"
 import { Input } from "../Input"
 import { useState } from "react"
+import { ISearch } from "./types"
+import userService from '../../services/user'
 
-const Search = () => {
+const Search = ({setUser}: ISearch) => {
   const [username, setUsername] = useState("")
 
-  const handleSearch = (event: React.SyntheticEvent<HTMLFormElement>) => {
+  const handleSearch = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault()
-    console.log("enviado")
+    const user = await userService.get(username)
+    let repositories = await userService.getRepos(username)
+    repositories = repositories.sort((a: any , b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    const userProfile = {
+      name: user.name,
+      image: user.avatar_url,
+      username: user.login,
+      createdAt: new Date(user.created_at),
+      followers: user.followers,
+      following: user.following,
+      repos: user.public_repos,
+      reposList: repositories.slice(0, 6)
+    }
+    setUser(userProfile)
   }
 
   return (
@@ -24,7 +39,8 @@ const Search = () => {
             id="username"
             placeholder="octocat"
             value={username}
-            onChange={({target}) => setUsername(target.value)}
+            onChange={({target}) => setUsername(target.value)
+          }
           />
           <Button type="submit" text="Pesquisar" />
         </form>
