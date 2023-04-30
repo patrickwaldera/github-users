@@ -27,6 +27,7 @@ export const RepoItemContainer = styled.a`
   }
 
   .repo-text {
+    width: 100%;
     max-width: 100%;
     min-height: 110px;
     max-height: 110px;

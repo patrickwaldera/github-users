@@ -16,7 +16,7 @@ const Input = ({
       </label>
       <div className="input-container">
         <User size={24} />
-        <input id={id} placeholder={placeholder} required {...inputProps} />
+        <input type="text" id={id} placeholder={placeholder} required {...inputProps} />
       </div>
       {errorMessage && <span className="error">{errorMessage}</span>}
     </InputWrapper>
