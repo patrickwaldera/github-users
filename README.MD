@@ -37,7 +37,7 @@ npm run dev
 ``` 
 
 
-[header-url]: readme-images/search.jpg
+[header-url]: readme-images/search.png
 [header-link]: https://github.com/
 
 [profile-image]: readme-images/profile.png
